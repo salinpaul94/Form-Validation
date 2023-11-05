@@ -24,6 +24,14 @@
   position: relative;
 }
 
+.input-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+}
+
 .fa-paper-plane {
   position: absolute;
   top: 0;
