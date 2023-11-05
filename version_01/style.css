@@ -46,4 +46,21 @@
 
 .input-group label {
   flex-basis: 28%;
+  font-size: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+  flex-basis: 68%;
+  background: #f1e9d5;
+  border: 0px;
+  outline: 0px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+::placeholder {
+  font-size: 16px;
 }
