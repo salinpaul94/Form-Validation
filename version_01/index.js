@@ -54,6 +54,10 @@ function validateEmail() {
 function validateMessage() {
   let message = document.getElementById("contact-message").value;
 
+  if (message.length == 0) {
+    messageError.innerHTML = "Message is required";
+    return false;
+  }
   messageError.innerHTML = '<i class="fa-solid fa-check"></i>';
   return true;
 }
