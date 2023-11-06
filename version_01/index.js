@@ -14,6 +14,6 @@ function validateName() {
     nameError.innerHTML = "First Name and last Name required";
     return false;
   }
-  nameError.innerHTML = "Valid name";
+  nameError.innerHTML = '<i class="fa-solid fa-check"></i>';
   return true;
  }
