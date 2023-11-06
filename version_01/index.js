@@ -35,3 +35,9 @@ function validateName() {
   phoneError.innerHTML = '<i class="fa-solid fa-check"></i>';
   return true;
  }
+
+ function validateEmail() {
+  let email = document.getElementById("contact-email").value;
+  emailError.innerHTML = '<i class="fa-solid fa-check"></i>';
+  return true;
+ }
