@@ -54,13 +54,14 @@ function validateEmail() {
 function validateMessage() {
   let message = document.getElementById("contact-message").value;
   let required = 25;
-  
+  let left = required - message.length;
+
   if (message.length == 0) {
     messageError.innerHTML = "Message is required";
     return false;
   }
-  if (message.length < 25) {
-    messageError.innerHTML = "Message should of minimum 24 characters";
+  if (message.length < required) {
+    messageError.innerHTML = `${left} characters required`;
     return false;
   }
   messageError.innerHTML = '<i class="fa-solid fa-check"></i>';
