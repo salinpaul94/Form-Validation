@@ -50,3 +50,7 @@ function validateEmail() {
   emailError.innerHTML = '<i class="fa-solid fa-check"></i>';
   return true;
 }
+
+function validateMessage() {
+
+}
