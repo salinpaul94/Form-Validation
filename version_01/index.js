@@ -43,7 +43,10 @@ function validateEmail() {
     emailError.innerHTML = "Email is required";
     return false;
   }
-  // if(!email.match(/^[A-Za-z]*[@]))
+  if (!email.match(/^[A-Za-z.]{1,10}[@][A-Za-z]{1,10}[.][a-z]{2,4}$/)) {
+    emailError.innerHTML = "Invalid Email";
+    return false;
+  }
   emailError.innerHTML = '<i class="fa-solid fa-check"></i>';
   return true;
 }
