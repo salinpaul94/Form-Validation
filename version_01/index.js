@@ -61,7 +61,7 @@ function validateMessage() {
     return false;
   }
   if (message.length < required) {
-    messageError.innerHTML = `${left} characters required`;
+    messageError.innerHTML = `${left} more characters required`;
     return false;
   }
   messageError.innerHTML = '<i class="fa-solid fa-check"></i>';
