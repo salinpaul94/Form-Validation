@@ -91,9 +91,9 @@ form button {
 }
 
 .input-group span i {
-  color: rgb(49, 175, 49);
+  color: white;
   font-size: 20px;
-  background-color: rgb(193, 234, 157);
+  background-color: green;
   padding: 5px;
   border-radius: 50%;
 }
