@@ -53,4 +53,7 @@ function validateEmail() {
 
 function validateMessage() {
   let message = document.getElementById("contact-message").value;
+
+  messageError.innerHTML = '<i class="fa-solid fa-check"></i>';
+  return true;
 }
