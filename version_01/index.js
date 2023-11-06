@@ -53,7 +53,8 @@ function validateEmail() {
 
 function validateMessage() {
   let message = document.getElementById("contact-message").value;
-
+  let required = 25;
+  
   if (message.length == 0) {
     messageError.innerHTML = "Message is required";
     return false;
