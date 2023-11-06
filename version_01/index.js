@@ -58,6 +58,10 @@ function validateMessage() {
     messageError.innerHTML = "Message is required";
     return false;
   }
+  if (message.length < 25) {
+    messageError.innerHTML = "Message should of minimum 24 characters";
+    return false;
+  }
   messageError.innerHTML = '<i class="fa-solid fa-check"></i>';
   return true;
 }
