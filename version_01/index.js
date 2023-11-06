@@ -69,5 +69,7 @@ function validateMessage() {
 }
 
 function validateForm() {
+  if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
 
+  }
 }
