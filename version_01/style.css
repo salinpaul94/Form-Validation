@@ -76,3 +76,12 @@ form button {
   display: block;
   margin: 30px auto 10px;
 }
+
+.input-group span {
+  position: absolute;
+  bottom: 4px;
+  right: 17px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: red;
+}
