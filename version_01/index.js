@@ -76,6 +76,7 @@ function validateForm() {
     validateMessage();
     submitError.style.display = 'block';
     submitError.innerHTML = "Please fix error to submit form";
+    setTimeout(function () { submitError.style.display = "none"; }, 3000);
     return false;
   }
 }
