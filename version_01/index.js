@@ -67,3 +67,7 @@ function validateMessage() {
   messageError.innerHTML = '<i class="fa-solid fa-check"></i>';
   return true;
 }
+
+function validateForm() {
+
+}
