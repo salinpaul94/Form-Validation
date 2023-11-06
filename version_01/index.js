@@ -10,34 +10,40 @@ function validateName() {
     nameError.innerHTML = "Name is required";
     return false;
   }
-  if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+  if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
     nameError.innerHTML = "First Name and last Name required";
     return false;
   }
   nameError.innerHTML = '<i class="fa-solid fa-check"></i>';
   return true;
- }
+}
 
- function validatePhone() {
+function validatePhone() {
   let phone = document.getElementById("contact-phone").value;
-  if(phone.length == 0) {
+  if (phone.length == 0) {
     phoneError.innerHTML = "Phone No is required";
     return false;
   }
-  if(phone.length !== 10){
+  if (phone.length !== 10) {
     phoneError.innerHTML = "Phone No should be 10 digits";
     return false;
   }
-  if(!phone.match(/^[0-9]{10}$/)) {
+  if (!phone.match(/^[0-9]{10}$/)) {
     phoneError.innerHTML = "Phone number should be integer";
     return false;
   }
   phoneError.innerHTML = '<i class="fa-solid fa-check"></i>';
   return true;
- }
+}
 
- function validateEmail() {
+function validateEmail() {
   let email = document.getElementById("contact-email").value;
+
+  if (email.length == 0) {
+    emailError.innerHTML = "Email is required";
+    return false;
+  }
+  // if(!email.match(/^[A-Za-z]*[@]))
   emailError.innerHTML = '<i class="fa-solid fa-check"></i>';
   return true;
- }
+}
